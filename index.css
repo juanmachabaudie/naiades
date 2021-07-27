@@ -1,0 +1,241 @@
+:root {
+    --main-color: rgb(47, 0, 112)
+}
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    min-height: 100%;
+}
+.banner{
+    background-image: url(./public/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    background-color: rgba(83, 38, 155, 0.5);
+    width: 100%;
+
+}
+.header img{
+    width: 30%;
+    margin: 2rem;
+}
+.title{
+    width:70%;
+    margin: 2rem 0 0 2rem;
+    padding-bottom:2rem ;
+}
+.title h5{
+    background-color: var(--main-color);
+    width: fit-content;
+    padding:0 10px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.title h5, .title h1{
+    color: white;
+    margin: 0;
+}
+/* ----------------------------- */
+.text{
+    margin: 3rem;
+}
+.calendary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #e8e8e8;
+}
+.fa-calendar-alt{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.calendary p{
+    font-weight: 700;
+    color: var(--main-color);
+}
+.confirm{
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    padding: 0.5rem;
+}
+/* ----------------------------- */
+.filter{
+    background-image: url(./public/321525807e432d1ff19765c023b61bbd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+}
+.note{
+    width: 100%;
+    height: 30rem;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.noteImage{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.noteImg{
+    width: 100%;
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+}
+.fa-play-circle{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 40%;
+}
+.description{
+    width: 70%;
+}
+.description p{
+    color: white;
+}
+/* ----------------------------- */
+.row{
+    display: flex;
+    justify-content: center;
+}
+.row p{
+    font-size: 1rem;
+    padding: 1rem;
+}
+.row p b{
+    color: var(--main-color);
+}
+/* ----------------------------- */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(108, 85, 161);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.info h5, .info h6, .info p{
+    color: white;
+    margin: 0.5rem;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.copyright img{
+    width: 40%;
+    margin-bottom: 0.5rem;
+}
+.copyright p{
+    color: white;
+    margin: 2px;
+}
+
+@media (min-width: 550px) {
+    .header img{
+        width: 20%;
+    }
+    .title{
+        width:50%;
+    }
+    .title h5{
+        font-size: 1rem;
+    }
+    .title h1{
+        font-size: 3rem;
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    .filter{
+        height: 20rem;
+    }
+    .note{
+        width: 100%;
+        height: 20rem;
+        flex-direction: row;
+    }
+    .noteImage{
+        width: 40%;
+    }
+    .description{
+        width: 40%;
+    }
+
+    .row p{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .info{
+        align-items: flex-start;
+    }
+    .copyright{
+        align-items: flex-end;
+    }
+}
+
+@media (min-width: 1000px) {
+    .banner{
+        height: 40rem;
+    }
+    .header{
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .header img{
+        width: 15%;
+    }
+    .title{
+        width:30%;
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    .text{
+        margin:3rem 8rem;
+    }
+
+    .noteImage{
+        width: 20%;
+    }
+    .description{
+        width: 30%;
+    }
+}
